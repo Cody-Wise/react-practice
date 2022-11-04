@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button';
 
 function App() {
   function handleClick() {
@@ -9,7 +10,9 @@ function App() {
     <div className='App'>
       <div className='square'>
         <p>Hello World</p>
-        <button onClick={handleClick}>Click Me!</button>
+        <Button text='One' />
+        <Button text='Two' />
+        <Button text='Three' />
       </div>
     </div>
   );
