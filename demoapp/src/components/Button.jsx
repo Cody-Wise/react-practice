@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Button({ text }) {
+export default function Button({ count, setCount }) {
   function handleClick() {
-    alert(`You Clicked Button ${text}`);
+    setCount(count + 1);
   }
-  return <button onClick={handleClick}>Button {text}</button>;
+  return <button onClick={handleClick}>Button</button>;
 }
