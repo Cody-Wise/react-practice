@@ -1,8 +1,6 @@
 import React from 'react';
 
-const animals = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse'];
-
-export default function List() {
+export default function List({ animals }) {
   return (
     <div>
       {animals.map((animal) => (

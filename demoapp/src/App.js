@@ -4,6 +4,8 @@ import Button from './components/Button';
 import List from './components/List';
 import { useState } from 'react';
 
+const animals = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse'];
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,7 +15,7 @@ function App() {
         <p>Hello World</p>
         <p>Button has been clicked {count} times</p>
         <Button count={count} setCount={setCount} />
-        <List />
+        <List animals={animals} />
       </div>
     </div>
   );
